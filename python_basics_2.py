@@ -30,5 +30,41 @@ friends.pop() # removes the last element
 
 coordinates = (4, 5)
 # coordinates[1] = 10  # will return error
-print(coordinates)
+# print(coordinates)
 
+
+
+# FUNCTIONS
+
+def say_hi():
+    print('hello user')
+
+# say_hi()
+
+def cube(num):
+    return num * num * num
+
+# print(cube(3))
+
+
+is_male = False
+is_tall = False
+
+# if is_male or is_tall:
+#     print('you are a male or tall or both')
+# elif is_male and not(is_tall):
+#     print('you are a short male')
+# elif not(is_male) and is_tall:
+#     print('you are a male but is tall')
+# else:
+#     print('you are not a male nor tall')
+
+def biggest_num(num1, num2, num3):
+    if (num1 >= num2 and num1 >= num3):
+        return num1
+    elif (num2 >= num1 and num2 >= num3):
+        return num2
+    else:
+        return num3
+
+print(biggest_num(9, 4, 5))
